@@ -1,0 +1,17 @@
+HELLO crass นี้ผมนำเสนอ การ แยก เพิ่ม ลบ แก้ ปัญหา  เบื้องต้น
+   บางคนเรียนพื้นฐาน Git บางตนไม่รู้วิธีแยก Git ทำให้ Git ซ้อนกันเกิดความปนไฟล์ไปทั่ว
+        อยากรู้ว่าของเราปนไหมใช้ "git log --oneline" จะขึ้น commit ต่างๆ
+                         [check Git]
+[step1]- เช็ค Git ว่ามีเท่าไหร่
+        cd C:/Users/ชื่อคอม/User Folders(โฟลเดอร์ที่ใช้Git )
+         ตัวอย่าง cd C:/Users/lenovo/data
+  ข้อมูลเครื่องที่เป็นตัวอย่าง (data = Users Folders , Computer brand = lenovo , Git = dataมี Data SQlซ่อนอยู่)
+
+[step2]- รันคำสั่ง หา Git ที่ซ่อนใน data ผม
+        find . -type d -name ".git"
+  คำสั่งจะรายงานว่ามีโฟลเดอร์ไหนที่ .git ซ่อนอยู่
+         EX ./data/.git
+            ./data/Data SQL/.git  
+  แปลว่า
+     data กับ Data SQL เป็น Git(data เป็นตัวโฟลเดอร์หลักทำให้เวลา git log จะคุมทุกตัวในโฟลเดอร์นั้น)
+     
